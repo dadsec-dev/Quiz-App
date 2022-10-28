@@ -1,4 +1,5 @@
 const quizData = [
+    //importing quiz data/questions
     {
         question: "Which language runs in a web browser ?",
         a: "Java",
@@ -109,6 +110,7 @@ const quizData = [
 
 ];
 
+//saving neccesary cariables 
 const quiz = document.getElementById("quiz")
 const answerEls = document.querySelectorAll(".answer")
 const questionEl = document.getElementById("question")
@@ -124,7 +126,7 @@ loadquiz()
 
 function loadquiz() {
     deselectAnswers()
-
+//function which loads the quiz questions into the html 
     const currentQuizData = quizData[currentQuiz]
 
     questionEl.innerText = currentQuizData.question
@@ -148,7 +150,9 @@ function getSelected() {
     return answer
 }
 
+//adding an onclick evt listener to the button
 submitBtn.addEventListener("click", () => {
+    
     const answer = getSelected()
 
     if (answer) {
