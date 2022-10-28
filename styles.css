@@ -23,6 +23,13 @@ body{
 .quiz-header{
   padding: 4rem;
 }
+
+h1 {
+    padding-top: 0.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 h2{
   padding: 1rem;
   text-align: center;
